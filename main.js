@@ -1,6 +1,6 @@
 'use strict';
 var level, context, pirates, click;
-mouseClick = false;
+var mouseClick = false;
 document.onload=function () {
 var canvas = document.getElementById('canvas');
 canvas.addEventListener('mouseDown', mouseClick, false);

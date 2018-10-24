@@ -11,8 +11,11 @@ requestAnimationFrame(mainLoop());
 }
 function mainLoop() {
 if (level === 1) pirates.length = 1;
+mouseClick = false;
 for (var i = 0, i < pirates.length; i++) {
-  
+  while (!mouseClick){};
+  pirates[i].x = click[0];
+  pirates[i].y = click[1];
 }
 requestAnimationFrame(mainLoop());
 }

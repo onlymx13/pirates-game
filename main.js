@@ -1,8 +1,8 @@
 'use strict';
-var level, context, pirates, click;
+var level, context, pirates, click, pirateImg;
 var mouseClick = false;
 document.onload=function () {
-var pirateImg = document.getElementById('pirateimg');
+pirateImg = document.getElementById('pirateimg');
 var canvas = document.getElementById('canvas');
 canvas.addEventListener('mouseDown', mouseClick, false);
 canvas.addEventListener('touchstart', touchClick, false);

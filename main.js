@@ -1,15 +1,15 @@
 'use strict';
 var level;
 var context;
-var pirates;
+var pirates = new Array();
 var click;
 var pirateImg;
 var mouseClicked = false;
 document.body.onload=function () {
 pirateImg = document.getElementById('pirateimg');
 var canvas = document.getElementById('canvas');
-canvas.addEventListener('mouseDown', mouseClick(), false);
-canvas.addEventListener('touchstart', touchClick(), false);
+canvas.addEventListener('mouseDown', mouseClick, false);
+canvas.addEventListener('touchstart', touchClick, false);
 context = canvas.getContext('2d');
 level = 1;
 requestAnimationFrame(mainLoop());

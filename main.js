@@ -5,7 +5,7 @@ var pirates;
 var click;
 var pirateImg;
 var mouseClicked = false;
-document.onload=function () {
+document.body.onload=function () {
 pirateImg = document.getElementById('pirateimg');
 var canvas = document.getElementById('canvas');
 canvas.addEventListener('mouseDown', mouseClick(), false);

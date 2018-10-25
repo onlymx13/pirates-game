@@ -1,5 +1,9 @@
 'use strict';
-var level, context, pirates, click, pirateImg;
+var level;
+var context;
+var pirates;
+var click;
+var pirateImg;
 var mouseClicked = false;
 document.onload=function () {
 pirateImg = document.getElementById('pirateimg');
